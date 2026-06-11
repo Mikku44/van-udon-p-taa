@@ -1,87 +1,77 @@
-# Welcome to React Router!
+react-router v7 SSR
 
-A modern, production-ready template for building full-stack React applications using React Router.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
-
-## Features
-
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
-
-## Getting Started
-
-### Installation
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
+web information
 
 ```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
+
+
+
+
+
+เช่ารถตู้อุบล : เหมารถตู้อุบล พร้อมคนขับ มีรถตู้พร้อมให้บริการลูกค้ามากกว่า 100 คัน ครอบคลุมพื้นที่ อุบล บุรีรัมย์ อุดรธานี หนองคาย หนองบัวลำภู เลย ขอนแก่น สกลนคร นครพนม บึงกาฬ พร้อมเดินทางทุกจังหวัดทั่วไทย เช่น ลูกค้าจะมาแบบครอบครัว หมู่คณะ รถตู้อุบล สามารถรองรับบริการได้อย่างแน่นอน พร้อมสำหรับลูกค้า มาท่องเที่ยว ศึกษาดูงาน ประชุม สัมมนา หน่วยงานราชการ
+
+
+
+รถตู้อุบล : รถตู้อุบลให้เช่า มีขั้นตอนการจองง่าย เงื่อนไขไม่ยุ่งยาก จองด่วนภายใน 1 ชม.
+มั่นใจได้ว่าทีมงาน รถตู้อุบล พร้อมให้บริการคุณลูกค้าตลอดเวลา เริ่มต้น วันละ 2,000-2,500.-
+
+
+ประกอบกิจการ บริการรถตู้เช่า-เหมา
+รถตู้ออนิว รุ่นใหม่
+พร้อมคนขับ VIP 8 ที่นั่ง VIP 9 ที่นั่ง
+VIP 10 ที่นั่ง และ กึ่ง VIP 12-14 ที่นั่ง
+สำหรับเดินทางท่องเที่ยวทั้งไทยและลาว
+ทัศนศึกษา ประชุมสัมนา ทัวร์ไทย
+ทัวร์ต่างชาติ รับส่ง เช่า-เหมาทั่วไทย
+วิ่งดูงาน,ตรวจงาน,โรงงาน,โรงพยาบาล,ห้างร้าน
+แบบรายวัน,รายเดือน
+ทางเรายินดีรับให้คำปรึกษาท่าน
+รับรองท่านจะไม่ผิดหวังที่เลือกใช้บริการ
+
+
+
+
+ค่าเช่าบริการเริ่มต้นที่ 2,000-2,500 ครับ
+
+
+รถตู้อุบลนายต๊ะวีไอพี.com
+ทีมงานรถตู้เช่านำเที่ยว
+ยินดีให้บริการครับ
+
+
+
+*มีบริการจัดทริปท่องเที่ยว
+หารเฉลี่ย ในราคาประหยัด
+
+บริการด้วยพนักงานขับรถ
+ที่มีประสบการณ์ ชำนาญเส้นทาง
+อัธยาศัยดี เป็นกันเอง และ รักในงานบริการ
+
+
+
+
+
+
+
+
+
+
+
+
+*รถตู้ภายในสะอาด ประกันชั้น 1 ทุกคัน
+ปลอดภัยทุกเส้นทาง
+พร้อมระบบแสง สี เสียง
+และ สิ่งอำนวยความสะดวก
+ในด้านเทคโนโลยีครบครัน ตลอดการเดินทาง
+
+
+
+*เรามีรถตู้ไว้บริการท่าน
+หลากหลายสาขา (จังหวัด) อาทิเช่น
+อุบลราชธานี บุรีรัมย์ อุดรธานี หนองคาย
+หนองบัวลำภู เลย ขอนแก่น สกลนคร นครพนม บึงกาฬ
+
+
+@2025 รถตู้อุบลนายต๊ะวีไอพี.com
 ```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
