@@ -171,7 +171,7 @@ export default function Home() {
       <Navbar />
 
       {/* ─── HERO ─── */}
-      <Hero images={[images[0], images[5], images[14], images[17]]} />
+      <Hero images={[images[0], images[5], images[14], images[17], images[18]]} />
 
       {/* ─── QUICK CONTACT CTA ─── */}
       <section className="py-12 px-6 bg-white border-b border-slate-50">
