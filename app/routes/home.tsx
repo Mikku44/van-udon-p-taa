@@ -14,6 +14,7 @@ import {
 import Navbar from "~/components/navbar";
 import Hero from "~/components/Hero";
 import WhyChooseUs from "~/components/WhyChooseUs";
+import About from "~/components/About";
 import FloatingButton from "~/components/FloatingButton";
 
 export const meta: MetaFunction = () => [
@@ -77,15 +78,15 @@ const images = [
   "/images/296692_0.jpg",
   "/images/296693_0.jpg",
   "/images/296694_0.jpg",
-  "/images/inside.png",
-  "/images/inside2.png",
+  "/images/inside.webp",
+  "/images/inside2.webp",
   "/images/inside3.png",
-  "/images/inside4.png",
+  "/images/inside4.webp",
   "/images/inside5.png",
-  "/images/inside6.png",
+  "/images/inside6.webp",
   "/images/inside8.png",
-  "/images/inside9.png",
-  "/images/selfie.png",
+  "/images/inside9.webp",
+  "/images/selfie.webp",
   "/images/van.png",
   "/images/van2.png",
   "/images/van3.png",
@@ -195,7 +196,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="text-xs font-bold uppercase tracking-widest text-slate-400">LINE ID</p>
-                <a href="https://line.me/ti/p/~ta303064" target="_blank" rel="noreferrer" className="text-xl font-display font-black tracking-tight text-slate-900 hover:text-[#06C755] transition-colors">ta303064</a>
+                <a href="https://line.me/ti/p/~ta303064" target="_blank" rel="noreferrer" className="text-xl font-display font-black tracking-tight text-slate-900 hover:text-[#06C755] transition-colors">จองผ่าน LINE ID</a>
               </div>
             </div>
 
@@ -206,7 +207,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="text-xs font-bold uppercase tracking-widest text-slate-400">Facebook</p>
-                <a href="https://web.facebook.com/profile.php?id=100094713742678" target="_blank" rel="noreferrer" className="text-xl font-display font-black tracking-tight text-slate-900 hover:text-[#0084FF] transition-colors">รถตู้นายต๊ะ VIP</a>
+                <a href="https://web.facebook.com/profile.php?id=100094713742678" target="_blank" rel="noreferrer" className="text-xl font-display font-black tracking-tight text-slate-900 hover:text-[#0084FF] transition-colors">เฟซบุ๊ก รถตู้นายต๊ะ</a>
               </div>
             </div>
           </div>
@@ -214,6 +215,8 @@ export default function Home() {
       </section>
 
       <WhyChooseUs />
+      
+      <About />
 
       {/* ─── SERVICES ─── */}
       <section id="services" className="py-32 bg-slate-50">
@@ -224,7 +227,7 @@ export default function Home() {
             <h2 className="mt-4 text-4xl lg:text-5xl font-display font-black tracking-tight text-slate-900">
               บริการระดับพรีเมียม
             </h2>
-            <p className="mt-6 text-lg text-slate-500">เลือกบริการที่ตอบโจทย์การเดินทางของคุณ ไม่ว่าจะใกล้หรือไกล เราพร้อมดูแล</p>
+            <p className="mt-6 text-lg text-slate-500">เลือกบริการที่ตอบโจทย์การเดินทางของคุณ ไม่ว่าจะใกล้หรือไกล เราพร้อมดูแล ด้วยรถตู้ VIP รุ่นใหม่สะอาดปลอดภัย</p>
           </div>
 
           <div className="mt-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -247,7 +250,7 @@ export default function Home() {
 
         {/* ─── FULL SIZE IMAGE 1 ─── */}
         <section className="w-full h-[400px] lg:h-[600px] overflow-hidden">
-        <img src={images[5]} className="w-full h-full object-cover" alt="รถตู้อุบลนายต๊ะวีไอพี VIP" />
+        <img src={images[5]} className="w-full h-full object-cover" alt="รถตู้อุบลนายต๊ะวีไอพี VIP" loading="lazy" />
         </section>
 
         {/* ─── VAN TYPES ─── */}
@@ -289,7 +292,7 @@ export default function Home() {
                       className="mt-8 flex items-center gap-3 text-slate-300 group-hover:text-primary transition-all cursor-pointer w-fit"
                     >
                       <div className="h-px w-8 bg-current" />
-                      <span className="text-xs font-bold uppercase tracking-widest">Book Now</span>
+                      <span className="text-xs font-bold uppercase tracking-widest">เช็คคิวรถว่าง</span>
                     </a>
                   </div>
                 </div>
@@ -299,7 +302,7 @@ export default function Home() {
         </section>
         {/* ─── FULL SIZE IMAGE 2 ─── */}
         <section className="w-full h-[400px] lg:h-[800px] overflow-hidden flex justify-center items-center">
-        <img src={images[9]} className="w-full h-full object-cover" alt="ภายในรถตู้อุบลนายต๊ะวีไอพี VIP" />
+        <img src={images[9]} className="w-full h-full object-cover" alt="ภายในรถตู้อุบลนายต๊ะวีไอพี VIP" loading="lazy" />
         </section>
 
         {/* ─── VIDEOS ─── */}
@@ -310,7 +313,7 @@ export default function Home() {
             <h2 className="mt-4 text-4xl lg:text-5xl font-display font-black tracking-tight text-slate-900">
               บรรยากาศการเดินทาง
             </h2>
-            <p className="mt-6 text-lg text-slate-500">สัมผัสประสบการณ์การเดินทางที่แสนพิเศษกับรถตู้อุบลนายต๊ะวีไอพี</p>
+            <p className="mt-6 text-lg text-slate-500">สัมผัสประสบการณ์การเดินทางที่แสนพิเศษกับรถตู้อุบลนายต๊ะวีไอพี บริการเช่ารถตู้พร้อมคนขับ</p>
           </div>
 
           <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -319,6 +322,7 @@ export default function Home() {
                 src="/videos/wat_prayai.mp4" 
                 controls 
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
             <div className="rounded-[32px] overflow-hidden shadow-2xl bg-black aspect-[9/16]">
@@ -326,6 +330,7 @@ export default function Home() {
                 src="/videos/pai.mp4" 
                 controls 
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
             <div className="rounded-[32px] overflow-hidden shadow-2xl bg-black aspect-[9/16]">
@@ -333,6 +338,7 @@ export default function Home() {
                 src="/videos/rakthai.mp4" 
                 controls 
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>
@@ -349,13 +355,13 @@ export default function Home() {
               <p className="text-sm font-bold tracking-widest uppercase text-primary">Our Fleet</p>
               <h2 className="mt-4 text-4xl lg:text-5xl font-display font-black tracking-tight text-slate-900">แกลเลอรี่รถของเรา</h2>
             </div>
-            <p className="text-slate-500 text-lg max-w-md">สัมผัสความหรูหราและมาตรฐานความสะอาดของรถตู้นายต๊ะ VIP</p>
+            <p className="text-slate-500 text-lg max-w-md">สัมผัสความหรูหราและมาตรฐานความสะอาดของรถตู้นายต๊ะ VIP เช่ารถตู้พร้อมคนขับอุบล</p>
           </div>
 
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {images.map((img, i) => (
               <div key={i} className="rounded-[24px] overflow-hidden aspect-[4/3] group shadow-lg shadow-slate-200/50">
-                <img src={img} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="รถตู้อุบลนายต๊ะวีไอพี VIP" />
+                <img src={img} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="รถตู้อุบลนายต๊ะวีไอพี VIP" loading="lazy" />
               </div>
             ))}
           </div>
@@ -365,7 +371,7 @@ export default function Home() {
 
       {/* ─── FULL SIZE IMAGE 3 ─── */}
       <section className="w-full h-[400px] lg:h-[800px] overflow-hidden">
-        <img src={images[images.length-1]} className="w-full h-full object-cover" alt="รถตู้อุบลนายต๊ะวีไอพี VIP ภายนอก" />
+        <img src={images[images.length-1]} className="w-full h-full object-cover" alt="รถตู้อุบลนายต๊ะวีไอพี VIP ภายนอก" loading="lazy" />
       </section>
 
       {/* ─── PRICING ─── */}
@@ -379,7 +385,7 @@ export default function Home() {
                 ราคายุติธรรม<br />ไม่มีบวกเพิ่ม
               </h2>
               <p className="mt-6 text-lg text-slate-500 leading-relaxed">
-                เรามีเรทราคามาตรฐานที่ชัดเจน พร้อมการดูแลระดับพรีเมียมตลอดการเดินทาง
+                เรามีเรทราคามาตรฐานที่ชัดเจน พร้อมการดูแลระดับพรีเมียมตลอดการเดินทาง เช่ารถตู้ราคาถูกอุบล
               </p>
 
               <div className="mt-10 p-8 bg-white border border-slate-100 rounded-[32px] shadow-xl shadow-blue-900/5">
@@ -394,10 +400,10 @@ export default function Home() {
 
             <div className="lg:col-span-3 grid sm:grid-cols-2 gap-6">
               {[
-                ["คนขับมืออาชีพ", "ประสบการณ์สูง สุภาพ ชำนาญทาง"],
-                ["เดินทางต่างจังหวัด", "ไปได้ทุกจังหวัดทั่วไทยและลาว"],
-                ["จองง่าย ได้รถไว", "พร้อมสแตนด์บายตลอด 24 ชม."],
-                ["มาตรฐานความสะอาด", "ฆ่าเชื้อและทำความสะอาดทุกทริป"],
+                ["คนขับมืออาชีพ", "ประสบการณ์สูง สุภาพ ชำนาญทาง ทั่วไทย"],
+                ["เดินทางต่างจังหวัด", "ไปได้ทุกจังหวัดทั่วไทยและลาว อีสาน"],
+                ["จองง่าย ได้รถไว", "พร้อมสแตนด์บายตลอด 24 ชม. ทันใจ"],
+                ["มาตรฐานความสะอาด", "ฆ่าเชื้อและทำความสะอาดทุกทริป มั่นใจ"],
               ].map(([title, desc]) => (
                 <div
                   key={title}
@@ -480,7 +486,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="bg-primary rounded-[48px] p-12 lg:p-24 overflow-hidden relative">
             <div className="absolute bottom-0 right-0 w-full h-full opacity-30 
-            bg-[url('/images/inside.png')] bg-cover bg-center pointer-events-none" />
+            bg-[url('/images/inside.webp')] bg-cover bg-center pointer-events-none" />
 
             <div className="max-w-2xl relative z-10">
               <p className="text-blue-300 font-bold tracking-widest uppercase text-sm">Ready to travel?</p>
@@ -488,7 +494,7 @@ export default function Home() {
                 จองรถได้ทันที<br />ตลอด 24 ชม.
               </h2>
               <p className="mt-8 text-xl text-blue-100 leading-relaxed">
-                เช็คคิวรถฟรี ปรึกษาทริปท่องเที่ยวไทย-ลาว<br />ทีมงานนายต๊ะ VIP พร้อมดูแลคุณทุกเส้นทาง
+                เช็คคิวรถฟรี ปรึกษาทริปท่องเที่ยวไทย-ลาว<br />ทีมงานนายต๊ะ VIP พร้อมดูแลคุณทุกเส้นทาง ทั่วไทย
               </p>
 
               <div className="mt-12 flex flex-col sm:flex-row gap-6">
@@ -499,7 +505,7 @@ export default function Home() {
                   className="inline-flex items-center justify-center gap-3 bg-[#06C755] text-white px-10 py-5 rounded-full font-bold text-xl hover:scale-105 transition-all shadow-xl"
                 >
                   <FaLine size={24} />
-                  แอดไลน์จองรถ
+                  แอดไลน์สอบถาม
                 </a>
                 <a
                   href="https://web.facebook.com/profile.php?id=100094713742678"
@@ -508,10 +514,33 @@ export default function Home() {
                   className="inline-flex items-center justify-center gap-3 bg-white text-primary px-10 py-5 rounded-full font-bold text-xl hover:scale-105 transition-all shadow-xl"
                 >
                   <FaFacebookF size={20} />
-                  ทักเฟซบุ๊ก
+                  ติดต่อทางเฟซบุ๊ก
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── SHARE SECTION ─── */}
+      <section className="py-12 bg-slate-50 border-t border-slate-100">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <p className="text-slate-500 font-bold mb-6">แชร์ต่อให้เพื่อน</p>
+          <div className="flex justify-center gap-4">
+            <button 
+              onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, '_blank')}
+              className="p-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
+              aria-label="Share on Facebook"
+            >
+              <FaFacebookF />
+            </button>
+            <button 
+              onClick={() => window.open(`https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(window.location.href)}`, '_blank')}
+              className="p-3 bg-[#06C755] text-white rounded-full hover:bg-[#05a346] transition-colors"
+              aria-label="Share on LINE"
+            >
+              <FaLine />
+            </button>
           </div>
         </div>
       </section>
@@ -521,7 +550,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center overflow-hidden border border-slate-100">
-              <img src="/logo.webp" alt="Logo" className="w-full h-full object-contain" />
+              <img src="/logo.webp" alt="Logo" className="w-full h-full object-contain" loading="lazy" />
             </div>
             <span className="font-bold text-lg text-slate-900">
               รถตู้อุบลนายต๊ะวีไอพี <span className="text-accent">VIP</span>
@@ -537,7 +566,7 @@ export default function Home() {
               rel="noreferrer" 
               className="text-slate-500 hover:text-primary font-medium"
             >
-              ติดต่อเรา
+              ติดต่อสอบถาม
             </a>
           </div>
 

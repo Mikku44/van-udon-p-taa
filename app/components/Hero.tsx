@@ -30,8 +30,8 @@ export default function Hero({ images }: Props) {
             </h1>
 
             <p className="mt-8 text-xl text-slate-500 leading-relaxed max-w-xl">
-              บริการรถตู้ VIP รุ่นใหม่มากกว่า 100 คัน 
-              เน้นความสะอาด ปลอดภัย ชำนาญเส้นทางไทย-ลาว 
+              บริการเช่ารถตู้พร้อมคนขับ VIP รุ่นใหม่มากกว่า 100 คัน 
+              เน้นความสะอาด ปลอดภัย ชำนาญเส้นทางอีสานและทั่วไทย 
               พร้อมคนขับมืออาชีพที่ดูแลคุณเหมือนครอบครัว
             </p>
 
@@ -61,12 +61,13 @@ export default function Hero({ images }: Props) {
                 className="flex h-full transition-transform duration-700 ease-in-out"
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
               >
-                {images.map((img) => (
+                {images.map((img, index) => (
                   <div key={img} className="min-w-full h-full">
                     <img
                       src={img}
                       className="w-full h-full object-cover"
                       alt="รถตู้อุบลนายต๊ะวีไอพี VIP"
+                      loading={index === 0 ? "eager" : "lazy"}
                     />
                   </div>
                 ))}

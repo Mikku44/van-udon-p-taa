@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://รถตู้อุบลนายต๊ะวีไอพี.com/sitemap.xml
